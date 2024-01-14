@@ -17,7 +17,7 @@ caminhoDeDestino = caminhoDeDestino + "/" + arquivo;
 
 try
 {
-    File.Move(caminhoDeOrigem, caminhoDeDestino);
+    File.Copy(caminhoDeOrigem, caminhoDeDestino);
     Console.WriteLine($"Arquivo movido de {caminhoDeOrigem} para {caminhoDeDestino}");
 }
 catch(Exception e)
